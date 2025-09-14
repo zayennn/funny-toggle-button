@@ -9,7 +9,8 @@ body {
 * {
   box-sizing: border-box;
 }
-*:before, *:after {
+*:before,
+*:after {
   content: "";
   position: absolute;
 }
@@ -117,7 +118,8 @@ label.toggle-item:before {
 .normal label {
   background: #af4c4c;
   border: 0.5px solid rgba(117, 117, 117, 0.31);
-  box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.2), 0 -3px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.2),
+    0 -3px 4px rgba(0, 0, 0, 0.15);
 }
 .normal label:before {
   border: none;
@@ -135,7 +137,8 @@ label.toggle-item:before {
   width: calc(100% + 8px);
   left: -4px;
   z-index: 0;
-  box-shadow: inset 0px 2px 4px -2px rgba(0, 0, 0, 0.2), 0px 1px 2px 0px rgba(151, 151, 151, 0.2);
+  box-shadow: inset 0px 2px 4px -2px rgba(0, 0, 0, 0.2),
+    0px 1px 2px 0px rgba(151, 151, 151, 0.2);
 }
 
 #normal:checked + label {
@@ -171,12 +174,13 @@ label.toggle-item:before {
   width: 2.5em;
   height: 2.5em;
   position: absolute;
-  background: #8BC34A;
+  background: #8bc34a;
   transition: 0.4s ease;
   top: 4.5px;
   left: 4.5px;
 }
-.checkcross .check:before, .checkcross .check:after {
+.checkcross .check:before,
+.checkcross .check:after {
   height: 4px;
   border-radius: 10px;
   background: #fff;
@@ -236,7 +240,8 @@ label.toggle-item:before {
   transition: 0.2s cubic-bezier(0.42, 0.5, 0.58, 1);
 }
 .beer-pong .cup:before {
-  box-shadow: 0 -10px 0 0px rgba(39, 39, 39, 0.1), 0px -20px 0 0px rgba(39, 39, 39, 0.1);
+  box-shadow: 0 -10px 0 0px rgba(39, 39, 39, 0.1),
+    0px -20px 0 0px rgba(39, 39, 39, 0.1);
   border-radius: 3px;
   overflow: hidden;
   background: rgba(39, 39, 39, 0.1);
@@ -289,7 +294,8 @@ label.toggle-item:before {
   0% {
     transform: translateY(0);
   }
-  10%, 25% {
+  10%,
+  25% {
     transform: translate(-20px, -80px);
   }
   50% {
@@ -412,12 +418,39 @@ label.toggle-item:before {
   width: 2.5em;
   height: 2.5em;
   position: absolute;
-  background: #FF9800;
+  background: #ff9800;
   border: 2px solid black;
   transition: 0.4s ease;
   top: 4px;
   left: 4px;
-  background-image: radial-gradient(circle at -5px 10px, transparent 15px, black 15px, black 17px, transparent 17px), radial-gradient(circle at 41px 25px, transparent 15px, black 15px, black 17px, transparent 17px), linear-gradient(110deg, transparent 22px, black 22px, black 24px, transparent 24px), linear-gradient(18deg, transparent 22px, black 22px, black 24px, transparent 24px);
+  background-image: radial-gradient(
+      circle at -5px 10px,
+      transparent 15px,
+      black 15px,
+      black 17px,
+      transparent 17px
+    ),
+    radial-gradient(
+      circle at 41px 25px,
+      transparent 15px,
+      black 15px,
+      black 17px,
+      transparent 17px
+    ),
+    linear-gradient(
+      110deg,
+      transparent 22px,
+      black 22px,
+      black 24px,
+      transparent 24px
+    ),
+    linear-gradient(
+      18deg,
+      transparent 22px,
+      black 22px,
+      black 24px,
+      transparent 24px
+    );
 }
 .basketball-hoop .ball__wrapper {
   transition: 0.4s ease;
@@ -444,7 +477,20 @@ label.toggle-item:before {
 .basketball-hoop .hoop:after {
   width: 40px;
   height: 35px;
-  background: repeating-linear-gradient(45deg, transparent, transparent 13px, white 13px, white 15px), repeating-linear-gradient(-45deg, transparent, transparent 13px, white 13px, white 15px);
+  background: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 13px,
+      white 13px,
+      white 15px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 13px,
+      white 13px,
+      white 15px
+    );
   top: 8px;
   border-radius: 0 0 20% 20%/40% 40% 60% 60%;
   border: 2px solid #fff;
@@ -512,7 +558,8 @@ label.toggle-item:before {
   0% {
     transform: none;
   }
-  40%, 100% {
+  40%,
+  100% {
     transform: rotate(150deg);
   }
 }
@@ -544,7 +591,8 @@ label.toggle-item:before {
   transform: scale(0);
   transition: 0.2s ease 0.2s;
 }
-.pancake-stack .pancake:nth-child(3):before, .pancake-stack .pancake:nth-child(3):after {
+.pancake-stack .pancake:nth-child(3):before,
+.pancake-stack .pancake:nth-child(3):after {
   background: #ef8927;
   border-radius: 20px;
   width: 50%;
